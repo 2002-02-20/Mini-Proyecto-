@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container{
+    width: 473.83px;
+    height: 634.3px;
+    top: 197.44px;
+    left: 483.08px;
+    border-radius: 24px;
+    border: 1px;
+    border: 1px solid #BDBDBD;
+}
+
+
+.title{
+    margin-bottom: 15px;
+    font-size: 18px;
+    width: 318.88px;
+    height: 50px;
+    top: 291.33px;
+    left: 541.66px;
+    
+
+}
+
+.titleH3{
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+    text-align: left;  
+    color: #333333;
+}
+
+.masterWeb{
+    width: 318.88px;
+    height: 66px;
+    top: 355.83px;
+    left: 541.66px;   
+    color: #333333;
+    margin-bottom: 15px;
+ 
+}
+
+.masterWebP{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.035em;
+    text-align: left;
+  
+
+}
+
+.inputEmail{
+    width: 356.48px;
+    height: 48px;
+    top: 456.49px;
+    left: 541.66px;
+    border-radius: 8px;
+    border: 1px;
+    border: 1px solid #BDBDBD;
+    margin-bottom: 15px;
+    padding: 0px 20px;
+
+}
+
+.inputPassword{
+    width: 356.48px;
+    height: 48px;
+    top: 456.49px;
+    left: 541.66px;
+    border-radius: 8px;
+    border: 1px;
+    border: 1px solid #BDBDBD;
+    margin-bottom: 25px;
+    padding: 0px 20px;
+
+}
+
+.btnStart{
+ width: 356.48px;
+height: 38px;
+top: 589.5px;
+left: 541.66px;
+border-radius: 8px;
+background: #2F80ED;
+color: white;
+border: none;
+margin-bottom: 35px;
+font-size: 16px;
+
+}
+
+.textUnderBtn{
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: -0.035em;
+text-align: left;
+color: #828282;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:center ;
+margin-bottom: 15px;
+
+}
+
+.lastText{
+color: #828282;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+.loginLink{
+    color: #2D9CDB
+}
+
+.containerItems{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.allFormulary{
+   padding: 50px;
+}
+
+.logo{
+    margin-bottom: 20px;
+}
+
+.imgGoogle{
+    margin-right: 15px;
+}
+
+.imgFacebook{
+    margin-right: 15px;
+
+}
+.imgTwitter{
+    margin-right: 15px;
+
+}
+.imgGitHub{
+    margin-right: 15px;
+
+}
+
+.linksFoot{
+    color:#828282;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.aLink{
+    color:#828282;
+    text-decoration:underline;
+    
+}

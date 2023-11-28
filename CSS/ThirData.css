@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.linkBack{
+text-decoration: none;
+width: 39px;
+height: 25px;
+top: 101px;
+left: 323.23px;
+color: #2D9CDB;
+
+}
+.changeInfo{
+width: 131px;
+height: 33px;
+top: 180.86px;
+left: 345.22px;
+font-size: 24px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: -0.035em;
+text-align: left;
+
+}
+
+.changesWill{
+width: 463.25px;
+height: 19.79px;
+top: 217.86px;
+left: 346.52px;
+font-size: 13px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: -0.035em;
+text-align: left;
+color: #828282;
+
+}
+
+.changePhoto{
+width: 97px;
+height: 18px;
+top: 288.55px;
+left: 444.72px;
+font-size: 13px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: -0.035em;
+text-align: left;
+color: #828282;
+}
+
+label{
+width: 36px;
+height: 18px;
+top: 368.23px;
+left: 345.22px;
+font-size: 13px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: -0.035em;
+text-align: left;
+color: #4F4F4F;
+}
+
+input{
+width: 416.93px;
+height: 52px;
+top: 390.06px;
+left: 343.5px;
+border-radius: 12px;
+border: 1px;
+border: 1px solid #828282;
+margin-bottom: 20px;
+padding: 0px 20px;
+}
+
+.btnSave{
+    width: 82px;
+    height: 38px;
+    top: 896.97px;
+    left: 343.5px;
+    border-radius: 8px;
+    background: #2F80ED;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.linksFoot{
+    color:#828282;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.aLink{
+    color:#828282;
+    text-decoration:underline;
+}
+
+.container{
+width: 845.91px;
+height: 827.56px;
+top: 150px;
+left: 296.57px;
+border-radius: 12px;
+border: 1px;
+border: 1px solid #E0E0E0;
+margin-top: 10px;
+}
+
+.subContainerForm{
+    margin: 0px 40px;
+}
+
+.changeInfoAndText{
+    margin: 25px 0px 0px 0px;
+}
+
+.changePhoto{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 0px;
+    width: 200px;
+
+}
+
+.inputBio{
+width: 416.93px;
+height: 91.58px;
+top: 487.89px;
+left: 343.5px;
+border-radius: 12px;
+border: 1px;
+border: 1px solid #828282;
+
+}
+
+.bigContainerAll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
