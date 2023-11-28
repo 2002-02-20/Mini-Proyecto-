@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
@@ -27,8 +30,12 @@
                     <div class="masterWeb">
                         <p class="masterWebP">Master web development by marking real-life projects. There are multiple paths for you to choose</p>
                     </div>
-                    <div><input type="text" name="email" placeholder="Email" class="inputEmail"></div>
-                    <div><input type="password" placeholder="Password" class="inputPassword"></div>
+                    <div class="inputEmail"><span class="material-symbols-outlined emailIcon">
+                            mail
+                        </span><input type="text" name="email" placeholder="Email" ></div>
+                    <div class="inputPassword"><span class="material-symbols-outlined passwordlIcon">
+                            lock
+                        </span> <input type="password" placeholder="Password" ></div>
                     <div><button type="submit" class="btnStart">Start coding now</button></div>
                     <div class="textUnderBtn">
                         <p>or continue with these social profile</p>

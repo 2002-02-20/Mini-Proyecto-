@@ -98,13 +98,14 @@ padding: 0px 20px;
     color: white;
     font-size: 16px;
     border: none;
+    margin-top: 15px;
 }
 
 .linksFoot{
     color:#828282;
     font-size: 14px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 15px;
 }
 
@@ -115,7 +116,7 @@ padding: 0px 20px;
 
 .container{
 width: 845.91px;
-height: 827.56px;
+height: 777.56px; /*817.56*/
 top: 150px;
 left: 296.57px;
 border-radius: 12px;

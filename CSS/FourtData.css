@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container{
+width: 473.83px;
+height: 544.37px;
+top: 253.65px;
+left: 483.08px;
+border-radius: 24px;
+border: 1px;
+border: 1px solid #BDBDBD;
+padding: 60px 55px 0px;
+}
+
+.title{
+    width: 318.88px;
+    height: 25px;
+    top: 347.53px;
+    left: 541.66px;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.titleH3{
+
+font-weight: 600;
+line-height: 25px;
+letter-spacing: -0.035em;
+text-align: left;
+
+}
+
+.inputEmail{
+width: 356.48px;
+height: 48px;
+top: 399.79px;
+left: 541.66px;
+border-radius: 8px;
+border: 1px;
+border: 1px solid #BDBDBD;
+margin-bottom: 15px;
+padding: 0px 10px;
+
+/*CENTRA EL ICONO DENTRO DEL INPUT*/
+display: flex;
+flex-direction: row;
+justify-content: baseline;
+align-items: center;
+}
+
+.inputPassword{
+ width: 356.48px;
+height: 48px;
+top: 399.79px;
+left: 541.66px;
+border-radius: 8px;
+border: 1px;
+border: 1px solid #BDBDBD;
+padding: 0px 10px;
+display: flex;
+flex-direction: row;
+justify-content: baseline;
+align-items: center;
+
+}
+
+.btnStart{
+    width: 356.48px;
+    height: 38px;
+    top: 532.8px;
+    left: 541.66px;
+    border-radius: 8px;
+    background: #2F80ED;
+    color: white;
+    margin-top: 25px;
+    border: none;
+    font-size: 16px;
+}
+
+.textUnderBtn{
+width: 218px;
+height: 19px;
+top: 603.46px;
+left: 611px;
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: -0.035em;
+text-align: left;
+color: #828282;
+
+
+}
+
+.containerItems{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.lastText{
+width: 217px;
+height: 19px;
+top: 720.48px;
+left: 612px;
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: -0.035em;
+text-align: center;
+color: #828282;
+display: flex;
+}
+
+.loginLink{
+   color: #2D9CDB;
+   text-decoration: none;
+}
+
+.linksFoot{
+    color:#828282;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap:230px
+}
+
+.aLink{
+    color:#828282;
+    text-decoration:underline;
+    
+}
+
+.imgGoogle{
+    margin-right: 15px;
+}
+
+.imgFacebook{
+    margin-right: 15px;
+
+}
+.imgTwitter{
+    margin-right: 15px;
+
+}
+.imgGitHub{
+    margin-right: 15px;
+
+}
+
+.textUnderBtn{
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.containerItems{
+    margin-bottom: 40px;
+}
+
+.containerTextAndItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailIcon{
+color: #828282;
+padding-right: 5px;
+}
+
+.passwordlIcon{
+color: #828282;
+padding-right: 5px;
+}
+
+input{
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.btnStart:hover{
+    background: #34a4ff;
+    cursor: pointer;
+
+}
+
+a:hover{
+    color: #33b2fc;
+
+}
