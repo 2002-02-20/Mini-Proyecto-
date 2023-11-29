@@ -194,6 +194,7 @@ input {
     border: none;
     font-size: 16px;
     font-style: normal;
+    outline: none;
 }
 
 .emailIcon {

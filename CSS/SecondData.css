@@ -132,8 +132,8 @@ color: #BDBDBD;
     color:#828282;
     font-size: 14px;
     display: flex;
-    justify-content: space-around;
     margin-top: 15px;
+    gap: 600px
 }
 
 .aLink{
@@ -144,3 +144,65 @@ color: #BDBDBD;
 .nameTd{
     gap: 500px
 }
+
+.interactiveMenu{
+    width: 188px;
+    height: 174px;
+    top: 83px;
+    left: 1176px;
+    border-radius: 12px;
+    border: 1px;
+    border: 1px solid #E0E0E0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.desplegar{
+    visibility: visible;
+}
+
+.myProfileInteractive{
+    margin-top: 20px;
+    margin-left: 20px;
+   
+}
+
+.groupChatInteractive{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.logOutInteractive{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+    border-top: 1px solid #E0E0E0;
+    padding: 5px;
+    color: #EB5757;
+   
+}
+
+ul{
+    list-style: none;
+}
+
+.aTextInteractive{
+    text-decoration: none;
+    color: #4F4F4F;
+
+}
+
+.aTextInteractiveLog{
+    text-decoration: none;
+    color: #EB5757;
+
+}
+
+.paintInteractive{
+    width: 154.12px; /*164.12*/
+    height: 39.15px; /*39.15px*/
+    border-radius: 8px;
+    background: #F2F2F2;
+    padding: 7px;
+}
+
