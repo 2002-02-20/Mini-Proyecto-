@@ -32,10 +32,10 @@
                     </div>
                     <div class="inputEmail"><span class="material-symbols-outlined emailIcon">
                             mail
-                        </span><input type="text" name="email" placeholder="Email" ></div>
+                        </span><input type="text" name="email" placeholder="Email"></div>
                     <div class="inputPassword"><span class="material-symbols-outlined passwordlIcon">
                             lock
-                        </span> <input type="password" placeholder="Password" ></div>
+                        </span> <input type="password" placeholder="Password"></div>
                     <div><button type="submit" class="btnStart">Start coding now</button></div>
                     <div class="textUnderBtn">
                         <p>or continue with these social profile</p>

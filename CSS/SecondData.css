@@ -148,14 +148,17 @@ color: #BDBDBD;
 .interactiveMenu{
     width: 188px;
     height: 174px;
-    top: 83px;
-    left: 1176px;
     border-radius: 12px;
     border: 1px;
     border: 1px solid #E0E0E0;
     visibility: hidden;
     position: absolute;
+    /*mueve la posicion de la caja interactiva*/
+    top: 50px;
+    right: 20px;
 }
+
+
 
 .desplegar{
     visibility: visible;

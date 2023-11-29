@@ -28,10 +28,9 @@
                     </span>
                 </li>
             </div>
-
+            
             <div class="interactiveMenu">
                 <ul>
-
                     <div class="myProfileInteractive">
                         <li class="liInteractive">
                             <span class="material-symbols-outlined">
@@ -48,22 +47,20 @@
                             <a href="" class="aTextInteractive">Group Chat</a>
                         </li>
                     </div>
-
                     <div class="logOutInteractive">
-
                         <li class="liInteractive3"><span class="material-symbols-outlined logOutText">
                                 logout
                             </span>
                             <a href="" class="logOutText aTextInteractiveLog">Logout</a>
                         </li>
                     </div>
-
                 </ul>
             </div>
 
         </ul>
 
     </nav>
+
     <section>
         <h2 class="personalInfo">Personal info</h2>
         <p class="basicInfo">Basic info, like your name and photo</p>
