@@ -1,3 +1,15 @@
+<?php 
+
+    session_start();
+    if(isset($_SESSION['datosUsuario'])){
+
+        $datosUsuario = $_SESSION['datosUsuario'];
+         
+    } else{
+        // si no existe ninguna session redireccionar a:
+        header('location: ./getInto.php'); 
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +34,7 @@
 
         <ul>
             <div class="interactiveName">
-                <li>Xanthe Neal
+                <li><?php echo $datosUsuario['name']?>
                     <span class="material-symbols-outlined arrowIcon">
                         arrow_drop_up
                     </span>
@@ -77,7 +89,7 @@
                     </div>
 
                     <div>
-                        <button class="thBtnEdit">Edit</button>
+                        <a href="./changeInfo.php"><button class="thBtnEdit">Edit</button></a>
                     </div>
                 </th>
             </thead>
@@ -97,7 +109,7 @@
                         <h3>NAME</h3>
                     </div>
                     <div>
-                        <p>Xanthe Neal</p>
+                        <p><?php echo $datosUsuario['name']?></p>
                     </div>
                 </td>
             </tbody>
@@ -107,7 +119,7 @@
                         <h3>BIO</h3>
                     </div>
                     <div>
-                        <p>I am a software developer and a big fan of devchallenges...</p>
+                        <p><?php echo $datosUsuario['bio']?></p>
                     </div>
                 </td>
             </tbody>
@@ -117,7 +129,7 @@
                         <h3>PHONE</h3>
                     </div>
                     <div>
-                        <p>908249274292</p>
+                        <p><?php echo $datosUsuario['phone']?></p>
                     </div>
                 </td>
             </tbody>
@@ -127,7 +139,7 @@
                         <h3>EMAIL</h3>
                     </div>
                     <div>
-                        <p>xanthe.neal@gmail.com</p>
+                        <p><?php echo $datosUsuario['email']?></p>
                     </div>
                 </td>
             </tbody>
@@ -137,7 +149,7 @@
                         <h3>PASSWORD</h3>
                     </div>
                     <div>
-                        <p>************</p>
+                        <p><?php echo $datosUsuario['contrasena']?></p>
                     </div>
                 </td>
             </tbody>

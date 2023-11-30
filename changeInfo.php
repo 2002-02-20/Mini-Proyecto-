@@ -76,7 +76,7 @@
                                 <h4>CHANGE PHOTO</h4>
                             </div>
                             <br>
-                            <form action="">
+                            <form action="" method="POST">
                                 <label for="name">Name</label><br>
                                 <input type="text" id="name" name="name" placeholder="Enter your name.."><br>
                                 <label for="bio">Bio</label><br>
