@@ -75,7 +75,7 @@ text-align: left;
 color: #4F4F4F;
 }
 
-input{
+.inputEditInfo{
 width: 416.93px;
 height: 52px;
 top: 390.06px;
@@ -100,6 +100,12 @@ outline: none;
     font-size: 16px;
     border: none;
     margin-top: 15px;
+}
+
+.btnSave:hover{
+    background: #318bff;
+    transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .linksFoot{
@@ -247,4 +253,27 @@ margin: 20px 0px 0px 20px;
     gap: 10px;
     padding-left: 5px;
 
+}
+
+
+.changeTittle{
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 130px;
+}
+
+.changeTittle .textFoto{
+    display: inline-block;
+    color: #828282;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.changeTittle .textFoto:hover{
+    color: #318bff;
+}
+
+#foto{
+display: none;
 }

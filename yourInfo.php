@@ -4,7 +4,7 @@
     if(isset($_SESSION['datosUsuario'])){
 
         $datosUsuario = $_SESSION['datosUsuario'];
-         
+         print_r($datosUsuario); 
     } else{
         // si no existe ninguna session redireccionar a:
         header('location: ./getInto.php'); 

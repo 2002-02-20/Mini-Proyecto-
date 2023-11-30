@@ -71,25 +71,28 @@
                                 <h2 class="changeInfo">Change Info</h2>
                                 <p class="changesWill">Changes will be reflected to every services</p>
                             </div>
+                            <form action="./LOGIC/conectTable.php" method="POST">
                             <div class="changePhoto">
                                 <img src="./assets/Facebook.svg" alt="">
-                                <h4>CHANGE PHOTO</h4>
+                                <label class="changeTittle">
+                                    <span class="textFoto">CHANGE FOTO</span>
+                                    <input type="file" name="foto" id="foto" class="subirFoto" required>
+                                </label>
+                                
                             </div>
-                            <br>
-                            <form action="" method="POST">
                                 <label for="name">Name</label><br>
-                                <input type="text" id="name" name="name" placeholder="Enter your name.."><br>
+                                <input type="text" id="name" name="name" placeholder="Enter your name.." class="inputEditInfo"><br>
                                 <label for="bio">Bio</label><br>
                                 <input type="text" id="bio" name="bio" placeholder="Enter your bio.." class="inputBio"><br>
 
                                 <label for="phone">Phone</label><br>
-                                <input type="text" id="phone" name="phone" placeholder="Enter your phone.."><br>
+                                <input type="text" id="phone" name="phone" placeholder="Enter your phone.." class="inputEditInfo"><br>
 
                                 <label for="email">Email</label><br>
-                                <input type="text" id="email" name="email" placeholder="Enter your email.."><br>
+                                <input type="text" id="email" name="email" placeholder="Enter your email.." class="inputEditInfo"><br>
 
                                 <label for="password">Password</label><br>
-                                <input type="text" id="password" name="password" placeholder="Enter your password.."><br>
+                                <input type="text" id="password" name="password" placeholder="Enter your password.." class="inputEditInfo"><br>
                                 <button type="submit" class="btnSave">Save</button>
                             </form>
                         </div>
