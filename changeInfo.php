@@ -16,46 +16,46 @@
 
 <body>
     <nav class="menu">
-            <img src="./assets/devchallenges.svg" alt="logo de Página">
-            <ul id="menuList">
-                <div class="clickAndActive">
+        <img src="./assets/devchallenges.svg" alt="logo de Página">
+        <ul id="menuList">
+            <div class="clickAndActive">
                 <li>
                     Xanthe Neal
-                    <span class="material-symbols-outlined arrowIcon">
-                        arrow_drop_up
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
                     </span>
-                </div>
-                
-                    <div class="containerNavInteractive">
-                        <ul class="menu__nesting">
-                            <div class="myProfilePosition">     
-                            <li class="liInteractive"><span class="material-symbols-outlined">
-                                    account_circle
-                                </span>
-                                <a href="" class="aTextInteractive">My Profile</a>
-                            </li>
-                            </div>
-                            <div class="myProfilePosition"> 
-                            <li class="liInteractive2">
+            </div>
+
+            <div class="containerNavInteractive">
+                <ul class="menu__nesting">
+                    <div class="myProfilePosition">
+                        <li class="liInteractive"><span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                            <a href="" class="aTextInteractive">My Profile</a>
+                        </li>
+                    </div>
+                    <div class="myProfilePosition">
+                        <li class="liInteractive2">
                             <span class="material-symbols-outlined groupChat ">
-                                        group
-                                    </span>
-                                <a href="" class="aTextInteractive">Group Chat</a>
-                            </li>
-                            </div>
-                            
-                            <div class="myProfilePositionLast"> 
-                            <li class="liInteractive3"><span class="material-symbols-outlined logOutText">
-                                    logout
-                                </span>
-                                <a href="" class="logOutText aTextInteractive">Logout</a>
-                            </li>
-                            </div>
-                        </ul>
+                                group
+                            </span>
+                            <a href="" class="aTextInteractive">Group Chat</a>
+                        </li>
                     </div>
 
-                </li>
-            </ul>
+                    <div class="myProfilePositionLast">
+                        <li class="liInteractive3"><span class="material-symbols-outlined logOutText">
+                                logout
+                            </span>
+                            <a href="./login.php" class="logOutText aTextInteractive">Logout</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            </li>
+        </ul>
 
     </nav>
 
@@ -71,15 +71,15 @@
                                 <h2 class="changeInfo">Change Info</h2>
                                 <p class="changesWill">Changes will be reflected to every services</p>
                             </div>
-                            <form action="./LOGIC/conectTable.php" method="POST">
-                            <div class="changePhoto">
-                                <img src="./assets/Facebook.svg" alt="">
-                                <label class="changeTittle">
-                                    <span class="textFoto">CHANGE FOTO</span>
-                                    <input type="file" name="foto" id="foto" class="subirFoto" required>
-                                </label>
-                                
-                            </div>
+                            <form action="./LOGIC/update.php" method="POST">
+                                <div class="changePhoto">
+                                    <img src="./assets/Facebook.svg" alt="">
+                                    <label class="changeTittle">
+                                        <span class="textFoto">CHANGE FOTO</span>
+                                        <input type="file" name="foto" id="foto" class="subirFoto" required>
+                                    </label>
+
+                                </div>
                                 <label for="name">Name</label><br>
                                 <input type="text" id="name" name="name" placeholder="Enter your name.." class="inputEditInfo"><br>
                                 <label for="bio">Bio</label><br>

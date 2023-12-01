@@ -1,14 +1,12 @@
-<?php 
+<?php
+session_start();
+if (isset($_SESSION['datosUsuario'])) {
 
-    session_start();
-    if(isset($_SESSION['datosUsuario'])){
-
-        $datosUsuario = $_SESSION['datosUsuario'];
-         print_r($datosUsuario); 
-    } else{
-        // si no existe ninguna session redireccionar a:
-        header('location: ./getInto.php'); 
-    }
+    $datosUsuario = $_SESSION['datosUsuario'];
+} else {
+    // si no existe ninguna session redireccionar a:
+    #header('location: ./getInto.php'); 
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,13 +32,13 @@
 
         <ul>
             <div class="interactiveName">
-                <li><?php echo $datosUsuario['name']?>
-                    <span class="material-symbols-outlined arrowIcon">
-                        arrow_drop_up
+                <li><?php $datosUsuario['name'] ?>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
                     </span>
                 </li>
             </div>
-            
+
             <div class="interactiveMenu">
                 <ul>
                     <div class="myProfileInteractive">
@@ -63,7 +61,7 @@
                         <li class="liInteractive3"><span class="material-symbols-outlined logOutText">
                                 logout
                             </span>
-                            <a href="" class="logOutText aTextInteractiveLog">Logout</a>
+                            <a href="./login.php" class="logOutText aTextInteractiveLog">Logout</a>
                         </li>
                     </div>
                 </ul>
@@ -109,7 +107,7 @@
                         <h3>NAME</h3>
                     </div>
                     <div>
-                        <p><?php echo $datosUsuario['name']?></p>
+                        <p><?php echo $datosUsuario['name'] ?></p>
                     </div>
                 </td>
             </tbody>
@@ -119,7 +117,7 @@
                         <h3>BIO</h3>
                     </div>
                     <div>
-                        <p><?php echo $datosUsuario['bio']?></p>
+                        <p><?php echo $datosUsuario['bio'] ?></p>
                     </div>
                 </td>
             </tbody>
@@ -129,7 +127,7 @@
                         <h3>PHONE</h3>
                     </div>
                     <div>
-                        <p><?php echo $datosUsuario['phone']?></p>
+                        <p><?php echo $datosUsuario['phone'] ?></p>
                     </div>
                 </td>
             </tbody>
@@ -139,7 +137,7 @@
                         <h3>EMAIL</h3>
                     </div>
                     <div>
-                        <p><?php echo $datosUsuario['email']?></p>
+                        <p><?php echo $datosUsuario['email'] ?></p>
                     </div>
                 </td>
             </tbody>
@@ -149,7 +147,7 @@
                         <h3>PASSWORD</h3>
                     </div>
                     <div>
-                        <p><?php echo $datosUsuario['contrasena']?></p>
+                        <p><?php echo $datosUsuario['contrasena'] ?></p>
                     </div>
                 </td>
             </tbody>
