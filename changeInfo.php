@@ -31,7 +31,7 @@ if(isset($_SESSION['datosUsuario'])){
         <ul id="menuList">
             <div class="clickAndActive">
                 <li>
-                    Xanthe Neal
+                    <?php echo $usuario['name'] ?>
                     <span class="material-symbols-outlined">
                         arrow_drop_down
                     </span>
@@ -43,7 +43,7 @@ if(isset($_SESSION['datosUsuario'])){
                         <li class="liInteractive"><span class="material-symbols-outlined">
                                 account_circle
                             </span>
-                            <a href="" class="aTextInteractive">My Profile</a>
+                            <a href="./yourInfo.php" class="aTextInteractive">My Profile</a>
                         </li>
                     </div>
                     <div class="myProfilePosition">
@@ -89,7 +89,7 @@ if(isset($_SESSION['datosUsuario'])){
                             <img src="./assets/Facebook.svg" alt="">
                             <label class="changeTittle">
                                 <span class="textFoto">CHANGE FOTO</span>
-                                <input type="file" name="foto" id="foto" class="subirFoto" required>
+                                <input type="file" name="foto" id="foto" class="subirFoto">
                             </label>
 
                         </div>

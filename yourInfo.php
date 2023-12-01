@@ -1,11 +1,12 @@
 <?php
 session_start();
+
 if (isset($_SESSION['datosUsuario'])) {
 
     $datosUsuario = $_SESSION['datosUsuario'];
 } else {
     // si no existe ninguna session redireccionar a:
-    #header('location: ./getInto.php'); 
+    header('location: ./index.php'); 
 }
 ?>
 <!DOCTYPE html>
@@ -32,7 +33,7 @@ if (isset($_SESSION['datosUsuario'])) {
 
         <ul>
             <div class="interactiveName">
-                <li><?php $datosUsuario['name'] ?>
+                <li><?php echo $datosUsuario['name'] ?>
                     <span class="material-symbols-outlined">
                         arrow_drop_down
                     </span>
@@ -61,7 +62,7 @@ if (isset($_SESSION['datosUsuario'])) {
                         <li class="liInteractive3"><span class="material-symbols-outlined logOutText">
                                 logout
                             </span>
-                            <a href="./login.php" class="logOutText aTextInteractiveLog">Logout</a>
+                            <a href="./LOGIC/destroy.php" class="logOutText aTextInteractiveLog">Logout</a>
                         </li>
                     </div>
                 </ul>
@@ -97,7 +98,7 @@ if (isset($_SESSION['datosUsuario'])) {
                         <h3>PHOTO</h3>
                     </div>
                     <div>
-                        <img src="./assets/Google.svg" alt="">
+                        <span><?php echo $datosUsuario['foto'] ?></span>
                     </div>
                 </td>
             </tbody>
@@ -147,7 +148,7 @@ if (isset($_SESSION['datosUsuario'])) {
                         <h3>PASSWORD</h3>
                     </div>
                     <div>
-                        <p><?php echo $datosUsuario['contrasena'] ?></p>
+                        <p>******</p>
                     </div>
                 </td>
             </tbody>

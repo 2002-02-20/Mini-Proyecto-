@@ -1,3 +1,10 @@
+<!--
+
+PROTEGER CUENTA 
+if(isset($_SESSION[userData])){
+
+}
+-->
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,17 +1,14 @@
 <?php
 
 #PARA AGREGAR DATOS DESDE LA TABLA 
-#NO FUNCIONA
-
-
 
 require_once './conn.php';
 session_start(); 
 $usuar_id = $_SESSION['datosUsuario']['id'];
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    #$email = $_POST['email'];
-    #$password = $_POST['password']; 
+    $email = $_POST['email'];
+    $password = $_POST['password']; 
     #$foto= $_POST['foto'];
     $name= $_POST['name'];
     $bio= $_POST['bio'];
@@ -20,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     #$hash = password_hash($password, PASSWORD_DEFAULT);
 }
 
-$query = 'UPDATE usuarios SET /*`email` = ?  `contrasena` = ? `foto`= ?*/ `name`= ?, `bio`= ?, `phone` = ? WHERE id = ?';
+$query = 'UPDATE usuarios SET `email` = ?,  `contrasena` = ?, /*`foto`= ?*/ `name`= ?, `bio`= ?, `phone` = ? WHERE id = ?';
 
 
 
@@ -28,9 +25,9 @@ try{
 
     $stm = $pdo->prepare($query);
     $rs = $stm->execute([
-        #$email,
+        $email,
         #$hash,
-        #$password,
+        $password,
        #$foto,
         $name,
         $bio,
