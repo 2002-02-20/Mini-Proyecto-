@@ -1,3 +1,14 @@
+<?php 
+session_start();
+
+if(isset($_SESSION['datosUsuario'])){
+    $usuario = $_SESSION['datosUsuario'];
+}else{
+    header('location: ./login.php'); 
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,44 +74,46 @@
 
     <div class="bigContainerAll">
         <section>
-            <a href="#" class="linkBack">
-                < Back</a>
-                    <section class="container">
-                        <div class="subContainerForm">
-                            <div class="changeInfoAndText">
-                                <h2 class="changeInfo">Change Info</h2>
-                                <p class="changesWill">Changes will be reflected to every services</p>
-                            </div>
-                            <form action="./LOGIC/update.php" method="POST">
-                                <div class="changePhoto">
-                                    <img src="./assets/Facebook.svg" alt="">
-                                    <label class="changeTittle">
-                                        <span class="textFoto">CHANGE FOTO</span>
-                                        <input type="file" name="foto" id="foto" class="subirFoto" required>
-                                    </label>
-
-                                </div>
-                                <label for="name">Name</label><br>
-                                <input type="text" id="name" name="name" placeholder="Enter your name.." class="inputEditInfo"><br>
-                                <label for="bio">Bio</label><br>
-                                <input type="text" id="bio" name="bio" placeholder="Enter your bio.." class="inputBio"><br>
-
-                                <label for="phone">Phone</label><br>
-                                <input type="text" id="phone" name="phone" placeholder="Enter your phone.." class="inputEditInfo"><br>
-
-                                <label for="email">Email</label><br>
-                                <input type="text" id="email" name="email" placeholder="Enter your email.." class="inputEditInfo"><br>
-
-                                <label for="password">Password</label><br>
-                                <input type="text" id="password" name="password" placeholder="Enter your password.." class="inputEditInfo"><br>
-                                <button type="submit" class="btnSave">Save</button>
-                            </form>
-                        </div>
-                    </section>
-                    <div class="linksFoot">
-                        <p>created by <a href="#" class="aLink">username</a></p>
-                        <p>devChallenges.io</p>
+            <a href="./yourInfo.php" class="linkBack">
+                <span class="material-symbols-outlined arrowBack">
+                    arrow_back_ios
+                </span> Back</a>
+            <section class="container">
+                <div class="subContainerForm">
+                    <div class="changeInfoAndText">
+                        <h2 class="changeInfo">Change Info</h2>
+                        <p class="changesWill">Changes will be reflected to every services</p>
                     </div>
+                    <form action="./LOGIC/update.php" method="POST">
+                        <div class="changePhoto">
+                            <img src="./assets/Facebook.svg" alt="">
+                            <label class="changeTittle">
+                                <span class="textFoto">CHANGE FOTO</span>
+                                <input type="file" name="foto" id="foto" class="subirFoto" required>
+                            </label>
+
+                        </div>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name.." class="inputEditInfo"><br>
+                        <label for="bio">Bio</label><br>
+                        <input type="text" id="bio" name="bio" placeholder="Enter your bio.." class="inputBio"><br>
+
+                        <label for="phone">Phone</label><br>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your phone.." class="inputEditInfo"><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email" placeholder="Enter your email.." class="inputEditInfo"><br>
+
+                        <label for="password">Password</label><br>
+                        <input type="text" id="password" name="password" placeholder="Enter your password.." class="inputEditInfo"><br>
+                        <button type="submit" class="btnSave">Save</button>
+                    </form>
+                </div>
+            </section>
+            <div class="linksFoot">
+                <p>created by <a href="#" class="aLink">username</a></p>
+                <p>devChallenges.io</p>
+            </div>
         </section>
     </div>
 </body>
