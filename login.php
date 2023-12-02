@@ -1,10 +1,11 @@
-<!--
-
-PROTEGER CUENTA 
-if(isset($_SESSION[userData])){
-
+<?php 
+session_start();
+if(isset($_SESSION['datosUsuario'])){
+    $user = $_SESSION['datosUsuario'];
+} else{
+    #header('location: ./index.php');
 }
--->
+?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -13,11 +13,28 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $name= $_POST['name'];
     $bio= $_POST['bio'];
     $phone= $_POST['phone'];
+    $hash = password_hash($password, PASSWORD_DEFAULT);
 
-    #$hash = password_hash($password, PASSWORD_DEFAULT);
 }
 
-$query = 'UPDATE usuarios SET `email` = ?,  `contrasena` = ?, /*`foto`= ?*/ `name`= ?, `bio`= ?, `phone` = ? WHERE id = ?';
+if ($_FILES['foto']['error'] == UPLOAD_ERR_OK) {
+    $foto_tmp = $_FILES['foto']['tmp_name'];
+    $foto_name = $_FILES['foto']['name'];
+    $foto_extension = pathinfo($foto_name, PATHINFO_EXTENSION);
+
+    // Guardar la foto en una carpeta
+    $foto_destination = '../FOTOS' . $usuar_id . '_foto.' . $foto_extension;
+    move_uploaded_file($foto_tmp, $foto_destination);
+
+    // Actualizar la columna de la foto en la base de datos
+    $foto = $foto_destination;
+    print_r($foto); 
+}
+
+
+
+
+$query = 'UPDATE usuarios SET `email` = ?,  `contrasena` = ?, `foto`= ?, `name`= ?, `bio`= ?, `phone` = ? WHERE id = ?';
 
 
 
@@ -26,9 +43,9 @@ try{
     $stm = $pdo->prepare($query);
     $rs = $stm->execute([
         $email,
-        #$hash,
-        $password,
-       #$foto,
+        $hash,
+        #$password,
+        $foto,
         $name,
         $bio,
         $phone,
@@ -42,6 +59,7 @@ try{
     );
 
     $rs = $stm1->fetch(PDO::FETCH_ASSOC);
+
     session_start(); 
     $_SESSION['datosUsuario'] = $rs;
     $datosUsuario = $_SESSION['datosUsuario'];

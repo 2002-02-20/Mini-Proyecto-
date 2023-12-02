@@ -2,7 +2,6 @@
 session_start();
 
 if (isset($_SESSION['datosUsuario'])) {
-
     $datosUsuario = $_SESSION['datosUsuario'];
 } else {
     // si no existe ninguna session redireccionar a:
@@ -13,7 +12,7 @@ if (isset($_SESSION['datosUsuario'])) {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="./CSS/SecondData.css" />

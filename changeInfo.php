@@ -102,10 +102,10 @@ if(isset($_SESSION['datosUsuario'])){
                         <input type="text" id="phone" name="phone" placeholder="Enter your phone.." class="inputEditInfo"><br>
 
                         <label for="email">Email</label><br>
-                        <input type="text" id="email" name="email" placeholder="Enter your email.." class="inputEditInfo"><br>
+                        <input type="text" id="email" name="email" placeholder="Enter your email.." class="inputEditInfo" required><br>
 
                         <label for="password">Password</label><br>
-                        <input type="text" id="password" name="password" placeholder="Enter your password.." class="inputEditInfo"><br>
+                        <input type="text" id="password" name="password" placeholder="Enter your password.." class="inputEditInfo" required><br>
                         <button type="submit" class="btnSave">Save</button>
                     </form>
                 </div>
