@@ -15,12 +15,6 @@
 </head>
 
 <body class="allPage">
-    <div class="darkMode">
-        <span class="material-symbols-outlined">
-            nightlight
-        </span>
-    </div>
-
     <section>
         <div class="container">
             <form action="./LOGIC/conectTable.php" method="POST">
@@ -40,10 +34,10 @@
                     </div>
                     <div class="inputEmail"><span class="material-symbols-outlined emailIcon">
                             mail
-                        </span><input type="text" name="email" placeholder="Email" required></div>
+                        </span><input type="text" name="email" placeholder="Email" required autocomplete="off"></div>
                     <div class="inputPassword"><span class="material-symbols-outlined passwordlIcon">
                             lock
-                        </span> <input type="password" placeholder="Password" name="password" required></div>
+                        </span> <input type="password" placeholder="Password" name="password" required autocomplete="off"></div>
                     <div><button type="submit" class="btnStart">Start coding now</button></div>
                     <div class="textUnderBtn">
                         <p>or continue with these social profile</p>
@@ -68,10 +62,15 @@
                 </div>
             </form>
             <div class="linksFoot">
-                <p>created by <a href="#" class="aLink">username</a></p>
+                <p>created by <a href="#" class="aLink">DerekMoscui</a></p>
                 <p>devChallenges.io</p>
             </div>
         </div>
+        <div class="darkMode">
+        <span class="material-symbols-outlined moon">
+            nightlight
+        </span>
+    </div>
     </section>
 </body>
 

@@ -38,7 +38,7 @@ if (isset($_SESSION['datosUsuario'])) {
                 <li class="containerPicInNav"><div >
                 <?php if ($datosUsuario['foto'] != '') : ?>
                                     <img src="<?= $datosUsuario['foto'] ?>" 
-                                    alt="" class="cuadradoNav">
+                                    alt="foto Perfil" class="cuadradoNav">
                                     <?php endif; ?>
 
                 </div><?php echo $datosUsuario['name'] ?>
@@ -110,7 +110,7 @@ if (isset($_SESSION['datosUsuario'])) {
                             <div >
                             <?php if ($datosUsuario['foto'] != '') : ?>
                                     <img src="<?= $datosUsuario['foto'] ?>" 
-                                    alt="" class="cuadrado">
+                                    alt="foto Perfil" class="cuadrado">
                                     <?php endif; ?>
                             </div>
                         </span>
@@ -169,15 +169,16 @@ if (isset($_SESSION['datosUsuario'])) {
             </tbody>
         </table>
         <div class="linksFoot">
-            <p>created by <a href="#" class="aLink">username</a></p>
+            <p>created by <a href="#" class="aLink">DerekMoscui</a></p>
             <p>devChallenges.io</p>
         </div>
-    </section>
-    <div class="darkMode">
-        <span class="material-symbols-outlined">
+        <div class="darkMode">
+        <span class="material-symbols-outlined moon">
             nightlight
         </span>
     </div>
+    </section>
+    
 </body>
 
 </html>

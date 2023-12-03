@@ -15,85 +15,53 @@ nav{
 
 .linkBack{
 text-decoration: none;
-width: 39px;
-height: 25px;
-top: 101px;
-left: 323.23px;
 color: #2D9CDB;
-
 }
+
 .changeInfo{
-width: 131px;
-height: 33px;
-top: 180.86px;
-left: 345.22px;
 font-size: 24px;
 font-weight: 400;
-line-height: 33px;
 letter-spacing: -0.035em;
-text-align: left;
-
+margin-top: 25px;
 }
 
 .changesWill{
-width: 463.25px;
-height: 19.79px;
-top: 217.86px;
-left: 346.52px;
 font-size: 13px;
-font-weight: 500;
-line-height: 18px;
 letter-spacing: -0.035em;
-text-align: left;
 color: #828282;
+padding-top: 7px;
 
 }
 
 .changePhoto{
-width: 97px;
-height: 18px;
-top: 288.55px;
-left: 444.72px;
 font-size: 13px;
-font-weight: 500;
 line-height: 18px;
 letter-spacing: -0.035em;
-text-align: left;
 color: #828282;
 }
 
 label{
 width: 36px;
-height: 18px;
-top: 368.23px;
-left: 345.22px;
 font-size: 13px;
-font-weight: 500;
-line-height: 18px;
-letter-spacing: -0.035em;
-text-align: left;
 color: #4F4F4F;
+
+
 }
 
 .inputEditInfo{
 width: 416.93px;
 height: 52px;
-top: 390.06px;
-left: 343.5px;
 border-radius: 12px;
-border: 1px;
 border: 1px solid #828282;
 margin-bottom: 20px;
 padding: 0px 20px;
 outline: none;
-
+margin-top: 5px;
 }
 
 .btnSave{
     width: 82px;
     height: 38px;
-    top: 896.97px;
-    left: 343.5px;
     border-radius: 8px;
     background: #2F80ED;
     color: white;
@@ -106,6 +74,7 @@ outline: none;
     background: #318bff;
     transition: background-color 0.3s;
     cursor: pointer;
+
 }
 
 .linksFoot{
@@ -119,45 +88,35 @@ outline: none;
 .aLink{
     color:#828282;
     text-decoration:underline;
+
 }
 
 .container{
 width: 845.91px;
-height: 777.56px; /*817.56*/
-top: 150px;
-left: 296.57px;
+height: 777.56px; 
 border-radius: 12px;
-border: 1px;
 border: 1px solid #E0E0E0;
 margin-top: 10px;
-}
-
-.subContainerForm{
-    margin: 0px 40px;
-}
-
-.changeInfoAndText{
-    margin: 25px 0px 0px 0px;
+padding: 0px 40px;
 }
 
 .changePhoto{
     display: flex;
     align-items: center;
-    gap: 15px;
     padding: 30px 0px;
-    width: 200px;
-
 }
 
 .inputBio{
 width: 416.93px;
 height: 91.58px;
-top: 487.89px;
-left: 343.5px;
 border-radius: 12px;
-border: 1px;
 border: 1px solid #828282;
-
+margin-bottom: 20px;
+margin-top: 5px;
+outline: none;
+padding: 0px 20px;
+padding-bottom: 35px;
+line-height: 1.5px;
 }
 
 .bigContainerAll{
@@ -186,7 +145,6 @@ right: 20px;
 .myProfileNav{
 width: 154.12px; /*164.12*/
 height: 39.15px;
-
 border-radius: 8px;
 background: #F2F2F2;
 }
@@ -203,8 +161,6 @@ ul{
 
 .logOutText{
    color: #EB5757;
- 
-   
 }
 
 .logoutDiv{
@@ -262,6 +218,7 @@ margin: 20px 0px 0px 20px;
     overflow: hidden;
     white-space: nowrap;
     width: 130px;
+
 }
 
 .changeTittle .textFoto{
@@ -269,6 +226,7 @@ margin: 20px 0px 0px 20px;
     color: #828282;
     border-radius: 4px;
     transition: background-color 0.3s;
+  
 }
 .changeTittle .textFoto:hover{
     color: #318bff;
@@ -276,10 +234,6 @@ margin: 20px 0px 0px 20px;
 
 #foto{
 display: none;
-}
-
-.arrowBack{
-    width: 10px;
 }
 
 .cuadrado{
@@ -297,15 +251,21 @@ justify-content: center;
     display: flex;
     gap: 55px;
     margin: 20px 0px;
+ 
 }
 
 .cuadradoNav{
 width: 32px;
 height: 36.69px;
-top: 24px;
-left: 1218.01px;
 margin-right: 10px;
 border-radius: 8px;
+}
+
+.divImgName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .containImgAndIcon{
@@ -329,6 +289,7 @@ border-radius: 8px;
     color: white; 
 }
 
+
 /*DARK MODE*/
 .darkMode{
     width: 30px;
@@ -338,12 +299,10 @@ border-radius: 8px;
     margin: 30px 60px 0px;
 }
 
-
 .a{
     background-color: #252329;
     color: white; 
     transition: 0.4s;
-
 }
 
 .textwhite{
@@ -360,4 +319,15 @@ border-radius: 8px;
 
 input{
     background-color: transparent;
+    color: gray;
+    width: 100%;
+    height: 100%;
+}
+
+input:focus-within{
+    border: solid 2px #33b2fc;
+}
+
+.moon{
+    color: gray;
 }

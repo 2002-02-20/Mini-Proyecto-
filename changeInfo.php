@@ -34,10 +34,10 @@ if (isset($_SESSION['datosUsuario'])) {
         <ul id="menuList">
             <div class="clickAndActive">
                 <li>
-                    <div class="containerPicInNav">
+                    <div class="divImgName">
                         <?php if ($usuario['foto'] != '') : ?>
                                     <img src="<?= $usuario['foto'] ?>" 
-                                    alt="" class="cuadradoNav">
+                                    alt="foto Perfil" class="cuadradoNav">
                                     <?php endif; ?>
                         <?php echo $usuario['name'] ?>
                         <span class="material-symbols-outlined">
@@ -84,22 +84,18 @@ if (isset($_SESSION['datosUsuario'])) {
     <div class="bigContainerAll">
         <section>
             <a href="./yourInfo.php" class="linkBack">
-                <span class="material-symbols-outlined arrowBack">
-                    arrow_back_ios
-                </span> Back</a>
+                < Back</a>
             <section class="container">
-                <div class="subContainerForm">
-                    <div class="changeInfoAndText">
+             
                         <h2 class="changeInfo">Change Info</h2>
                         <p class="changesWill">Changes will be reflected to every services</p>
-                    </div>
                     <form action="./LOGIC/update.php" method="POST" enctype="multipart/form-data">
                         <div class="fotoAndChangeFoto">
                             <label for="foto">
                                 <div class="containImgAndIcon">
                                     <?php if ($usuario['foto'] != '') : ?>
                                     <img src="<?= $usuario['foto'] ?>" 
-                                    alt="" class="cuadrado">
+                                    alt="foto Perfil" class="cuadrado">
                                     <?php endif; ?>
                                     <span class="material-symbols-outlined iconCamara">
                                         photo_camera
@@ -107,41 +103,41 @@ if (isset($_SESSION['datosUsuario'])) {
                                 </div>
                             </label>
                             <div class="changePhoto">
-
                                 <label class="changeTittle">
                                     <span class="textFoto">CHANGE FOTO</span>
                                     <input type="file" name="foto" id="foto" class="subirFoto">
                                 </label>
                             </div>
                         </div>
-                        <label for="name">Name</label><br>
-                        <input type="text" id="name" name="name" placeholder="Enter your name.." class="inputEditInfo"><br>
+                        <label for="name" class="labelName">Name</label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name.." class="inputEditInfo" autocomplete="off"><br>
                         <label for="bio">Bio</label><br>
-                        <input type="text" id="bio" name="bio" placeholder="Enter your bio.." class="inputBio"><br>
+                        <input type="text" id="bio" name="bio" placeholder="Enter your bio.." class="inputBio" autocomplete="off" ><br>
 
                         <label for="phone">Phone</label><br>
-                        <input type="text" id="phone" name="phone" placeholder="Enter your phone.." class="inputEditInfo"><br>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your phone.." class="inputEditInfo" autocomplete="off" ><br>
 
                         <label for="email">Email</label><br>
-                        <input type="text" id="email" name="email" placeholder="Enter your email.." class="inputEditInfo" required><br>
+                        <input type="text" id="email" name="email" placeholder="Enter your email.." class="inputEditInfo"  autocomplete="off" required><br>
 
                         <label for="password">Password</label><br>
-                        <input type="text" id="password" name="password" placeholder="Enter your password.." class="inputEditInfo" required><br>
+                        <input type="text" id="password" name="password" placeholder="Enter your password.." class="inputEditInfo"  autocomplete="off" required><br>
                         <button type="submit" class="btnSave">Save</button>
                     </form>
-                </div>
+
             </section>
             <div class="linksFoot">
-                <p>created by <a href="#" class="aLink">username</a></p>
+                <p>created by <a href="#" class="aLink">DerekMoscui</a></p>
                 <p>devChallenges.io</p>
             </div>
         </section>
-    </div>
-    <div class="darkMode">
-        <span class="material-symbols-outlined">
+        <div class="darkMode">
+        <span class="material-symbols-outlined moon">
             nightlight
         </span>
     </div>
+    </div>
+    
 </body>
 
 </html>

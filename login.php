@@ -23,12 +23,6 @@ if (isset($_SESSION['datosUsuario'])) {
 </head>
 
 <body class="allPage">
-   
-    <div class="darkMode">
-        <span class="material-symbols-outlined">
-            nightlight
-        </span>
-    </div>
     <section>
         <div class="container">
 
@@ -46,12 +40,12 @@ if (isset($_SESSION['datosUsuario'])) {
 
                     <div class="inputEmail"><span class="material-symbols-outlined emailIcon">
                             mail
-                        </span><input type="text" name="email" placeholder="Email" required></div>
+                        </span><input type="text" name="email" placeholder="Email" required autocomplete="off"></div>
                     <div class="inputPassword">
                         <span class="material-symbols-outlined passwordlIcon">
                             lock
                         </span>
-                        <input type="password" placeholder="Password" name="password" required>
+                        <input type="password" placeholder="Password" name="password" required autocomplete="off">
                     </div>
                     <div><button type="submit" class="btnStart">Login</button></div>
 
@@ -82,14 +76,15 @@ if (isset($_SESSION['datosUsuario'])) {
 
         </div>
         <div class="linksFoot">
-            <p>created by <a href="#" class="aLink">username</a></p>
+            <p>created by <a href="#" class="aLink">DerekMoscui</a></p>
             <p>devChallenges.io</p>
         </div>
-
+        <div class="darkMode">
+        <span class="material-symbols-outlined moon">
+            nightlight
+        </span>
+    </div>
     </section>
-    <!--ICON WHITE
-     -->
-
 </body>
 
 </html>
