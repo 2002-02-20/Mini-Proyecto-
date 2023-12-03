@@ -211,3 +211,30 @@ a:hover{
     color: #33b2fc;
 
 }
+
+/*DARK MODE*/
+.darkMode{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 2px #828282;
+}
+
+.a{
+    background-color: #252329;
+    color: white; 
+    transition: 0.4s;
+
+}
+
+.logoWhite{
+    display: none;
+}
+
+.logoDark{
+    display: block;
+}
+
+input{
+    background-color: transparent;
+}

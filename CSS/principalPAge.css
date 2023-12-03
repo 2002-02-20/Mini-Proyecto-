@@ -217,3 +217,38 @@ a:hover{
     color: #33b2fc;
 
 }
+
+/*DARK MODE*/
+
+.darkMode{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 2px #828282;
+    margin: 30px 60px 0px;
+}
+
+
+.a{
+    background-color: #252329;
+    color: #E0E0E0; 
+    transition: 0.4s;
+
+}
+
+.textwhite{
+    color: #E0E0E0;
+    ; 
+}
+
+.logoWhite{
+    display: none;
+}
+
+.logoDark{
+    display: block;
+}
+
+input{
+    background-color: transparent;
+}

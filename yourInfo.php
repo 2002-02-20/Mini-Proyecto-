@@ -23,12 +23,15 @@ if (isset($_SESSION['datosUsuario'])) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <script src="./JS/selectec.js" defer></script>
+    <script src="./JS/dMYourInfo.js" defer></script>
 
 </head>
 
-<body>
+<body class="allPage">
+
     <nav>
-        <img src="./assets/devchallenges.svg" alt="logo de Página">
+    <img src="./assets/devchallenges.svg" alt="logo" class="logoOriginal">
+     <img src="./assets/devchallenges-light.svg" alt="" class="logoWhite">
 
         <ul>
             <div class="interactiveName">
@@ -170,7 +173,11 @@ if (isset($_SESSION['datosUsuario'])) {
             <p>devChallenges.io</p>
         </div>
     </section>
-
+    <div class="darkMode">
+        <span class="material-symbols-outlined">
+            nightlight
+        </span>
+    </div>
 </body>
 
 </html>

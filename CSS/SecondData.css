@@ -252,3 +252,37 @@ ul{
         color: #33b2fc; 
         transition: 0.3s;
     }
+
+    .darkMode{
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        border: solid 2px #828282;
+        margin: 30px 60px 0px;
+    }
+    
+    
+    .a{
+        background-color: #252329;
+        color: white; 
+        transition: 0.4s;
+    
+    }
+    
+    .textwhite{
+        color: white; 
+    }
+    
+    .logoWhite{
+        display: none;
+    }
+    
+    .logoDark{
+        display: block;
+    }
+    
+  .btnDarkMode{
+    background-color: #252329;
+    color: white;
+    border: solid 2px white;
+  }

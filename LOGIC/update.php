@@ -4,7 +4,6 @@
 
 require_once './conn.php';
 session_start(); 
-print_r($_SESSION['datosUsuario']); 
 $user_id= $_SESSION['datosUsuario']['id'];
 
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['foto'])){

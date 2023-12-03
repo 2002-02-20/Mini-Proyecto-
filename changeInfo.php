@@ -23,11 +23,14 @@ if (isset($_SESSION['datosUsuario'])) {
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="./JS/app.js" defer></script>
+    <script src="./JS/dMChangeInfo.js" defer></script>
+
 </head>
 
-<body>
+<body class="allPage">
     <nav class="menu">
-        <img src="./assets/devchallenges.svg" alt="logo de Página">
+    <img src="./assets/devchallenges.svg" alt="logo" class="logoOriginal">
+     <img src="./assets/devchallenges-light.svg" alt="" class="logoWhite">
         <ul id="menuList">
             <div class="clickAndActive">
                 <li>
@@ -65,7 +68,7 @@ if (isset($_SESSION['datosUsuario'])) {
                         <li class="liInteractive3"><span class="material-symbols-outlined logOutText">
                                 logout
                             </span>
-                            <a href="./login.php" class="logOutText aTextInteractive">Logout</a>
+                            <a href="./LOGIC/destroy.php" class="logOutText aTextInteractive">Logout</a>
                         </li>
                     </div>
                 </ul>
@@ -98,7 +101,6 @@ if (isset($_SESSION['datosUsuario'])) {
                                     <img src="<?= $usuario['foto'] ?>" 
                                     alt="" class="cuadrado">
                                     <?php endif; ?>
-
                                     <span class="material-symbols-outlined iconCamara">
                                         photo_camera
                                     </span>
@@ -134,6 +136,11 @@ if (isset($_SESSION['datosUsuario'])) {
                 <p>devChallenges.io</p>
             </div>
         </section>
+    </div>
+    <div class="darkMode">
+        <span class="material-symbols-outlined">
+            nightlight
+        </span>
     </div>
 </body>
 

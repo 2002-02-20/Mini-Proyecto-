@@ -1,8 +1,8 @@
-<?php 
+<?php
 session_start();
-if(isset($_SESSION['datosUsuario'])){
+if (isset($_SESSION['datosUsuario'])) {
     $user = $_SESSION['datosUsuario'];
-} else{
+} else {
     #header('location: ./index.php');
 }
 ?>
@@ -19,18 +19,26 @@ if(isset($_SESSION['datosUsuario'])){
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <script src="./JS/dMLogin.js" defer></script>
 </head>
 
-<body>
-
+<body class="allPage">
+   
+    <div class="darkMode">
+        <span class="material-symbols-outlined">
+            nightlight
+        </span>
+    </div>
     <section>
         <div class="container">
 
             <form action="./LOGIC/bringInfo.php" method="POST">
                 <div class="allFormulary">
 
-                    <div class="logo"><img src="./assets/devchallenges.svg" alt="logo"></div>
+                    <div class="logo">
+                    <img src="./assets/devchallenges.svg" alt="logo" class="logoOriginal">
+                    <img src="./assets/devchallenges-light.svg" alt="" class="logoWhite">
+                </div>
 
                     <div class="title">
                         <h3 class="titleH3">Login</h3>
@@ -43,7 +51,7 @@ if(isset($_SESSION['datosUsuario'])){
                         <span class="material-symbols-outlined passwordlIcon">
                             lock
                         </span>
-                        <input type="password" placeholder="Password" name="password"  required>
+                        <input type="password" placeholder="Password" name="password" required>
                     </div>
                     <div><button type="submit" class="btnStart">Login</button></div>
 
@@ -79,7 +87,8 @@ if(isset($_SESSION['datosUsuario'])){
         </div>
 
     </section>
-
+    <!--ICON WHITE
+     -->
 
 </body>
 
