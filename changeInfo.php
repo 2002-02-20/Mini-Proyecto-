@@ -1,10 +1,10 @@
-<?php 
+<?php
 session_start();
 
-if(isset($_SESSION['datosUsuario'])){
+if (isset($_SESSION['datosUsuario'])) {
     $usuario = $_SESSION['datosUsuario'];
-}else{
-    header('location: ./login.php'); 
+} else {
+    header('location: ./login.php');
 }
 
 ?>
@@ -31,10 +31,16 @@ if(isset($_SESSION['datosUsuario'])){
         <ul id="menuList">
             <div class="clickAndActive">
                 <li>
-                    <?php echo $usuario['name'] ?>
-                    <span class="material-symbols-outlined">
-                        arrow_drop_down
-                    </span>
+                    <div class="containerPicInNav">
+                        <?php if ($usuario['foto'] != '') : ?>
+                                    <img src="<?= $usuario['foto'] ?>" 
+                                    alt="" class="cuadradoNav">
+                                    <?php endif; ?>
+                        <?php echo $usuario['name'] ?>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </div>
             </div>
 
             <div class="containerNavInteractive">
@@ -84,14 +90,27 @@ if(isset($_SESSION['datosUsuario'])){
                         <h2 class="changeInfo">Change Info</h2>
                         <p class="changesWill">Changes will be reflected to every services</p>
                     </div>
-                    <form action="./LOGIC/update.php" method="POST">
-                        <div class="changePhoto">
-                            <img src="./assets/Facebook.svg" alt="">
-                            <label class="changeTittle">
-                                <span class="textFoto">CHANGE FOTO</span>
-                                <input type="file" name="foto" id="foto" class="subirFoto">
-                            </label>
+                    <form action="./LOGIC/update.php" method="POST" enctype="multipart/form-data">
+                        <div class="fotoAndChangeFoto">
+                            <label for="foto">
+                                <div class="containImgAndIcon">
+                                    <?php if ($usuario['foto'] != '') : ?>
+                                    <img src="<?= $usuario['foto'] ?>" 
+                                    alt="" class="cuadrado">
+                                    <?php endif; ?>
 
+                                    <span class="material-symbols-outlined iconCamara">
+                                        photo_camera
+                                    </span>
+                                </div>
+                            </label>
+                            <div class="changePhoto">
+
+                                <label class="changeTittle">
+                                    <span class="textFoto">CHANGE FOTO</span>
+                                    <input type="file" name="foto" id="foto" class="subirFoto">
+                                </label>
+                            </div>
                         </div>
                         <label for="name">Name</label><br>
                         <input type="text" id="name" name="name" placeholder="Enter your name.." class="inputEditInfo"><br>

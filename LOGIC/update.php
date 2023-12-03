@@ -4,38 +4,26 @@
 
 require_once './conn.php';
 session_start(); 
-$usuar_id = $_SESSION['datosUsuario']['id'];
+print_r($_SESSION['datosUsuario']); 
+$user_id= $_SESSION['datosUsuario']['id'];
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
+if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['foto'])){
     $email = $_POST['email'];
     $password = $_POST['password']; 
-    #$foto= $_POST['foto'];
     $name= $_POST['name'];
     $bio= $_POST['bio'];
     $phone= $_POST['phone'];
     $hash = password_hash($password, PASSWORD_DEFAULT);
-
-}
-
-if ($_FILES['foto']['error'] == UPLOAD_ERR_OK) {
-    $foto_tmp = $_FILES['foto']['tmp_name'];
-    $foto_name = $_FILES['foto']['name'];
-    $foto_extension = pathinfo($foto_name, PATHINFO_EXTENSION);
-
-    // Guardar la foto en una carpeta
-    $foto_destination = '../FOTOS' . $usuar_id . '_foto.' . $foto_extension;
-    move_uploaded_file($foto_tmp, $foto_destination);
-
-    // Actualizar la columna de la foto en la base de datos
-    $foto = $foto_destination;
-    print_r($foto); 
-}
-
-
-
+    
+    $base_url = '../FOTOS/';
+    $tmp = $_FILES['foto']['tmp_name'];
+    $imgName = $_FILES['foto']['name'];
+    $ext = pathinfo($imgName, PATHINFO_EXTENSION);
+    $url = $base_url . "profile_$user_id." . $ext;
+    move_uploaded_file($tmp, $url);
+   
 
 $query = 'UPDATE usuarios SET `email` = ?,  `contrasena` = ?, `foto`= ?, `name`= ?, `bio`= ?, `phone` = ? WHERE id = ?';
-
 
 
 try{
@@ -45,17 +33,18 @@ try{
         $email,
         $hash,
         #$password,
-        $foto,
+        #$foto,
+        $url, 
         $name,
         $bio,
         $phone,
-        $usuar_id 
+        $user_id ,
     ]);
 
     $sql = "SELECT * FROM usuarios WHERE `id`= ?";
     $stm1 = $pdo->prepare($sql);
     $stm1->execute(
-        [$usuar_id]
+        [$user_id]
     );
 
     $rs = $stm1->fetch(PDO::FETCH_ASSOC);
@@ -69,4 +58,5 @@ try{
     echo $e->getMessage(); 
 } 
 
+}
 

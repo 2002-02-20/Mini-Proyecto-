@@ -5,14 +5,14 @@ if (isset($_SESSION['datosUsuario'])) {
     $datosUsuario = $_SESSION['datosUsuario'];
 } else {
     // si no existe ninguna session redireccionar a:
-    header('location: ./index.php'); 
+    header('location: ./index.php');
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="./CSS/SecondData.css" />
@@ -32,7 +32,13 @@ if (isset($_SESSION['datosUsuario'])) {
 
         <ul>
             <div class="interactiveName">
-                <li><?php echo $datosUsuario['name'] ?>
+                <li class="containerPicInNav"><div >
+                <?php if ($datosUsuario['foto'] != '') : ?>
+                                    <img src="<?= $datosUsuario['foto'] ?>" 
+                                    alt="" class="cuadradoNav">
+                                    <?php endif; ?>
+
+                </div><?php echo $datosUsuario['name'] ?>
                     <span class="material-symbols-outlined">
                         arrow_drop_down
                     </span>
@@ -92,17 +98,24 @@ if (isset($_SESSION['datosUsuario'])) {
                 </th>
             </thead>
             <tbody>
-                <td>
+                <td class="tdFoto">
                     <div class="nameTd">
                         <h3>PHOTO</h3>
                     </div>
                     <div>
-                        <span><?php echo $datosUsuario['foto'] ?></span>
+                        <span>
+                            <div >
+                            <?php if ($datosUsuario['foto'] != '') : ?>
+                                    <img src="<?= $datosUsuario['foto'] ?>" 
+                                    alt="" class="cuadrado">
+                                    <?php endif; ?>
+                            </div>
+                        </span>
                     </div>
                 </td>
             </tbody>
             <tbody>
-                <td>
+                <td class="tdDatosTable">
                     <div>
                         <h3>NAME</h3>
                     </div>
@@ -112,7 +125,7 @@ if (isset($_SESSION['datosUsuario'])) {
                 </td>
             </tbody>
             <tbody>
-                <td>
+                <td class="tdDatosTable">
                     <div>
                         <h3>BIO</h3>
                     </div>
@@ -122,7 +135,7 @@ if (isset($_SESSION['datosUsuario'])) {
                 </td>
             </tbody>
             <tbody>
-                <td>
+                <td class="tdDatosTable">
                     <div>
                         <h3>PHONE</h3>
                     </div>
@@ -132,7 +145,7 @@ if (isset($_SESSION['datosUsuario'])) {
                 </td>
             </tbody>
             <tbody>
-                <td>
+                <td class="tdDatosTable">
                     <div>
                         <h3>EMAIL</h3>
                     </div>
@@ -142,7 +155,7 @@ if (isset($_SESSION['datosUsuario'])) {
                 </td>
             </tbody>
             <tbody>
-                <td>
+                <td class="tdDatosTable">
                     <div>
                         <h3>PASSWORD</h3>
                     </div>

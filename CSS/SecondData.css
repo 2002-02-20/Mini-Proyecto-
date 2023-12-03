@@ -51,7 +51,6 @@ margin-bottom: 20px;
 
 table{
     width: 845.91px;
-    height: 580.54px;
     top: 228.06px;
     left: 297.04px;
     border-radius: 12px;
@@ -112,14 +111,22 @@ color: #828282;
     transition: 0.3s;
 }
 
-td{
+.tdDatosTable{
     display: flex;
     align-items: baseline;
     border-top: 1px solid #E0E0E0;
-    padding: 20px 50px;
-    gap: 200px
+    padding: 25px 50px;
+    gap: 150px
 
 }
+
+.tdFoto{
+    display: flex;
+    border-top: 1px solid #E0E0E0;
+    padding: 15px 50px;
+    gap: 150px;
+}
+
 
 h3{
 width: 37px;
@@ -149,6 +156,7 @@ color: #BDBDBD;
 }
 
 .nameTd{
+    padding-top: 30px;
     gap: 500px
 }
 
@@ -216,3 +224,31 @@ ul{
     padding: 7px;
 }
 
+.cuadrado{
+    width: 72px;
+    height: 72px;
+    top: 263.55px;
+    left: 345.22px;
+    border-radius: 8px;
+    margin-right: 15px;
+    display: flex;
+    }
+
+    .cuadradoNav{
+        width: 32px;
+        height: 36.69px;
+        margin-right: 10px;
+        border-radius: 8px;
+    }
+
+    .containerPicInNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .aLink:hover{
+        color: #33b2fc; 
+        transition: 0.3s;
+    }

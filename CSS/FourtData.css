@@ -60,6 +60,11 @@ justify-content: baseline;
 align-items: center;
 }
 
+/*Ilumina el input al aplastarlo*/
+.inputEmail:focus-within{
+    border: solid 2px red;
+    transition: 0.3s;
+}
 .inputPassword{
  width: 356.48px;
 height: 48px;

@@ -281,3 +281,44 @@ display: none;
 .arrowBack{
     width: 10px;
 }
+
+.cuadrado{
+width: 72px;
+height: 72px;
+top: 263.55px;
+left: 345.22px;
+border-radius: 8px;
+margin-right: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.fotoAndChangeFoto{
+    display: flex;
+    gap: 55px;
+    margin: 20px 0px;
+}
+
+.cuadradoNav{
+width: 32px;
+height: 36.69px;
+top: 24px;
+left: 1218.01px;
+margin-right: 10px;
+border-radius: 8px;
+}
+
+.containImgAndIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #EB5757;
+}
+
+.aLink:hover{
+    color: #33b2fc; 
+    transition: 0.3s;
+}
